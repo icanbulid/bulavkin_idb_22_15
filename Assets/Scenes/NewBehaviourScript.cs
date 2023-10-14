@@ -1,16 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    public GameObject Testobj;
+    public GameObject Testobject;
 
-    public void button() {
-        if (Testobj.activeSelf)
-            Testobj.SetActive(false);
-        else Testobj.SetActive(true);
-      
+    public void ToggleObject()
+    {
+        if (Testobject.activeSelf)
+        {
+            Testobject.SetActive(false);
+        }
+        else
+        {
+            Testobject.SetActive(true);
+        }
     }
 }
